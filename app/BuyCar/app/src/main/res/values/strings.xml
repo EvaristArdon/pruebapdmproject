@@ -12,4 +12,6 @@
     <string name="country">Country</string>
     <string name="dui_o_id">DUI o ID</string>
     <string name="web_client">233982210589-ei18b1ch2nj9kv5hivb7tg1evk6pl9fd.apps.googleusercontent.com</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>

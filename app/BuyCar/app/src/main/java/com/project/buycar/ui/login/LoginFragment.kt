@@ -70,6 +70,14 @@ class LoginFragment : Fragment() {
             val signInIntent = mGoogleSignInClient.signInIntent
             startActivityForResult(signInIntent, RC_SIGN_IN)
         }
+
+        binding.registerbutton.setOnClickListener {
+            findNavController().navigate(R.id.registerFragment)
+        }
+
+        binding.forgotbutton.setOnClickListener {
+            findNavController().navigate(R.id.forgot_password_reset)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

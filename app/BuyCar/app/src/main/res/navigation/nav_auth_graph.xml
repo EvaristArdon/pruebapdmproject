@@ -28,12 +28,12 @@
         android:label="RegisterAuthDataFragment"
         tools:layout="@layout/fragment_register_auth_data"/>
     <fragment
-        android:id="@+id/forgot_PasswordFragmentChange"
+        android:id="@+id/forgot_pasword_change"
         android:name="com.project.buycar.ui.forgot_password.ForgotPasswordChange"
         android:label="Forgot_PasswordFragmentChange"
         tools:layout="@layout/fragment_forgot_password_change"/>
     <fragment
-        android:id="@+id/forgot_password_email"
+        android:id="@+id/forgot_password_reset"
         android:name="com.project.buycar.ui.forgot_password.ForgotPasswordReset"
         android:label="fragment_forgot_password_email"
         tools:layout="@layout/fragment_forgot_password_reset" />

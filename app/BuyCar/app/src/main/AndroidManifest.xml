@@ -17,8 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BuyCar"
         tools:ignore="Instantiatable">
-        <activity android:name=".ui.AuthActivity"
-            android:noHistory="true" >
+        <activity android:name=".ui.AuthActivity">
         </activity>
         <activity
             android:name=".ui.HomeActivity"

@@ -6,13 +6,13 @@ import android.widget.Toast
 import com.project.buycar.R
 
 class AuthActivity : AppCompatActivity() {
-    private var backPressedTime = 0L
+   // private var backPressedTime = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
     }
-
+/*
     override fun onBackPressed() {
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             super.onBackPressed()
@@ -22,5 +22,5 @@ class AuthActivity : AppCompatActivity() {
         }
         backPressedTime = System.currentTimeMillis();
 
-    }
+    }*/
 }
