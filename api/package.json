@@ -1,0 +1,60 @@
+{
+  "name": "apirestful_mongo",
+  "version": "1.0.1",
+  "private": true,
+  "main": "www.js",
+  "scripts": {
+    "dev": "nodemon ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^4.4.1",
+    "debug": "~2.6.9",
+    "dotenv": "^6.2.0",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.2",
+    "http-errors": "~1.6.2",
+    "imagekit": "^3.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.7",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7",
+    "postcss-flexbugs-fixes": "^3.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.3",
+    "pino-pretty": "^2.5.0",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --config .prettierrc --write",
+      "git add"
+    ],
+    "packages/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

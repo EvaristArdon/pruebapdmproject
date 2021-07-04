@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/market_list"
+    >
+
+    <fragment
+        android:id="@+id/market_list"
+        android:name="com.project.buycar.ui.market.MarketListFragment"
+        android:label="fragment_market_list"
+        tools:layout="@layout/fragment_market_list" />
+
+    <fragment
+        android:id="@+id/market_details"
+        android:name="com.project.buycar.ui.market.MarketDetailsFragment"
+        android:label="fragment_market_details"
+        tools:layout="@layout/fragment_market_details" />
+
+    <fragment
+        android:id="@+id/my_post_user"
+        android:name="com.project.buycar.ui.my_posts.PostUserFragment"
+        android:label="fragment_post_user"
+        tools:layout="@layout/fragment_post_user" />
+
+    <fragment
+        android:id="@+id/post_Add_information"
+        android:name="com.project.buycar.ui.post.PostAddInformationFragment"
+        android:label="fragment_post_add_information"
+        tools:layout="@layout/fragment_post_add_information" />
+
+    <fragment
+        android:id="@+id/post_features"
+        android:name="com.project.buycar.ui.post.PostAddInformationFragment"
+        android:label="fragment_post_features"
+        tools:layout="@layout/fragment_post_features" />
+
+
+    <fragment
+        android:id="@+id/profile_edit_user"
+        android:name="com.project.buycar.ui.profile.EditUserFragment"
+        android:label="fragment_edit_user"
+        tools:layout="@layout/fragment_edit_user"/>
+
+    <fragment
+        android:id="@+id/profile_profile_user"
+        android:name="com.project.buycar.ui.profile.EditUserFragment"
+        android:label="fragment_edit_user"
+        tools:layout="@layout/fragment_profile_user"/>
+
+</navigation>
